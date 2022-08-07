@@ -15,7 +15,9 @@ for i in range(20):
 if rand == 100:
     sys.stdout.write("Decryption failed, exiting")
     exit("Error Code: " + str(rando))
-else:                                                                      for j in range(10000):                                                     print(str(hex(random.randint(0, 255))), end = '')
+else:
+    for j in range(10000):
+        print(str(hex(random.randint(0, 255))), end = '')
     letters = string.ascii_letters
     sys.stdout.write("\nDecryption successful, result is:\n")
     sys.stdout.write(''.join(random.choice(letters) for i in range(25)))
