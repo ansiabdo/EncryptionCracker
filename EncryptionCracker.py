@@ -18,6 +18,7 @@ if rand == 100:
 else:
     for j in range(10000):
         print(str(hex(random.randint(0, 255))), end = '')
+    count = random.randint(5, 35)
     letters = string.ascii_letters
     sys.stdout.write("\nDecryption successful, result is:\n")
-    sys.stdout.write(''.join(random.choice(letters) for i in range(25)))
+    sys.stdout.write(''.join(random.choice(letters) for i in range(count)))
