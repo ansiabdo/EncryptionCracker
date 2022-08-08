@@ -22,6 +22,7 @@ elif roll_chance == 9999:
 else:
     for j in range(10000):
         print(str(hex(random.randint(0, 255))), end = '')
+        time.sleep(0.001)
     count = random.randint(5, 35)
     letters = string.ascii_letters
     sys.stdout.write("\nDecryption successful, result is:\n")
