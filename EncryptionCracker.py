@@ -20,7 +20,7 @@ elif roll_chance == 9999:
     webopen("https://m.youtube.com/watch/dQw4w9WgXcQ", new = 2)
 else:
     for j in range(10000):
-        print(str(hex(random.randint(0, 255))), end = '')
+        print(str(hex(randint(0, 255))), end = '')
         sleep(0.001)
     count = random.randint(5, 35)
     letters = string.ascii_letters
