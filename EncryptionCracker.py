@@ -1,5 +1,6 @@
 import string
 from random import randint
+from random import choice
 from time import sleep
 import sys
 
@@ -69,7 +70,7 @@ else:
     for j in range(10000):
         print(str(hex(randint(0, 255))), end = '')
         sleep(0.001)
-    count = random.randint(5, 35)
+    count = randint(5, 35)
     letters = string.ascii_letters
     sys.stdout.write("\nDecryption successful, result is:\n")
-    sys.stdout.write(''.join(random.choice(letters) for i in range(count)))
+    sys.stdout.write(''.join(choice(letters) for i in range(count)))
